@@ -27,34 +27,34 @@ const Footer = () => {
             <div className="flex-1 min-w-[200px] flex flex-col gap-2">
               <h5 className="text-white text-base font-medium">Learn More</h5>
               <Link
-                to="#"
+                to="/"
+                className="text-white opacity-80 text-sm font-light hover:underline"
+              >
+                Home
+              </Link>
+              <Link
+                to="/about"
                 className="text-white opacity-80 text-sm font-light hover:underline"
               >
                 About Us
               </Link>
               <Link
-                to="#"
-                className="text-white opacity-80 text-sm font-light hover:underline"
-              >
-                Press Releases
-              </Link>
-              <Link
-                to="#"
+                to="/events"
                 className="text-white opacity-80 text-sm font-light hover:underline"
               >
                 Events
               </Link>
               <Link
-                to="#"
+                to="/blog"
                 className="text-white opacity-80 text-sm font-light hover:underline"
               >
-                Jobs
+                News & Blog
               </Link>
               <Link
-                to="#"
+                to="/partner"
                 className="text-white opacity-80 text-sm font-light hover:underline"
               >
-                Privacy Policy
+                Partner with Us
               </Link>
             </div>
 
@@ -62,22 +62,22 @@ const Footer = () => {
             <div className="flex-1 min-w-[200px] flex flex-col gap-2">
               <h5 className="text-white text-base font-medium">Services</h5>
               <Link
-                to="#"
+                to="policy-advisory"
                 className="text-white opacity-80 text-sm font-light hover:underline"
               >
-                Scholarships
+                Policy Advisory
               </Link>
               <Link
-                to="#"
+                to="community-engagement"
                 className="text-white opacity-80 text-sm font-light hover:underline"
               >
-                Lorem Ipsum
+                Community Engagement
               </Link>
               <Link
-                to="#"
+                to="/professional-consultancy"
                 className="text-white opacity-80 text-sm font-light hover:underline"
               >
-                Newsletter
+                Professional Consultancy
               </Link>
             </div>
 

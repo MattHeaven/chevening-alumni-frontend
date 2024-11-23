@@ -8,6 +8,8 @@ import BlogPage from './pages/Blog';
 import About from './pages/About';
 import Services from './pages/Services';
 import EventsFeed from './pages/EventsFeed';
+import NotFound from './pages/NotFound';
+import Partner from './pages/Partner';
 
 function App() {
   console.log("App loaded!");
@@ -25,8 +27,11 @@ function App() {
           <Route path="/blog/:id" element={<BlogPage />} />
           <Route path="/events" element={<EventsFeed />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/partner" element={<Partner />} />
           {/* Add more routes as needed */}
+
+          {/* Not Found */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         {/* Footer */}

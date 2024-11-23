@@ -57,11 +57,11 @@ const Navbar = () => {
           max-[648px]:transition-transform max-[648px]:duration-300
           ${isOpen ? 'max-[648px]:translate-x-0' : 'max-[648px]:translate-x-full'}`}
         >
+          <Link to="/" className="text-gray-600 hover:text-gray-900">
+            Home
+          </Link>
           <Link to="/about" className="text-gray-600 hover:text-gray-900">
             About Us
-          </Link>
-          <Link to="/services" className="text-gray-600 hover:text-gray-900">
-            Services
           </Link>
           <Link to="/blog" className="text-gray-600 hover:text-gray-900">
             Blog
