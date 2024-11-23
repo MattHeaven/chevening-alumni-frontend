@@ -1,6 +1,7 @@
 /* Base styles for the navbar */
 .navbar {
-    @apply absolute top-0 w-full z-10 p-4;
+    @apply top-0 w-full z-10 p-4;
+    transition: all 0.3s ease-in-out;
   }
   
   /* Container styles */
