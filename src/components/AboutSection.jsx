@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
+import CheveningPhoto from '../assets/alumniPic.png';
 
 const About = () => {
   const controls = useAnimation();
@@ -18,7 +19,7 @@ const About = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-center text-black text-3xl sm:text-4xl lg:text-5xl font-medium leading-[110%] mb-8"
+        className="text-center text-black text-3xl sm:text-4xl lg:text-5xl font-medium leading-[110%] mb-8 mt-8"
       >
         About Us
       </motion.h2>
@@ -45,7 +46,7 @@ const About = () => {
         >
           <img 
             className="w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover"
-            src="https://via.placeholder.com/538x463" 
+            src={CheveningPhoto} 
             alt="About Chevening"
             loading="lazy"
           />
