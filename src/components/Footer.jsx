@@ -62,19 +62,19 @@ const Footer = () => {
             <div className="flex-1 min-w-[200px] flex flex-col gap-2">
               <h5 className="text-white text-base font-medium">Services</h5>
               <Link
-                to="policy-advisory"
+                to="services/policy-advisory"
                 className="text-white opacity-80 text-sm font-light hover:underline"
               >
                 Policy Advisory
               </Link>
               <Link
-                to="community-engagement"
+                to="services/community-engagement"
                 className="text-white opacity-80 text-sm font-light hover:underline"
               >
                 Community Engagement
               </Link>
               <Link
-                to="/professional-consultancy"
+                to="services/professional-consultancy"
                 className="text-white opacity-80 text-sm font-light hover:underline"
               >
                 Professional Consultancy
