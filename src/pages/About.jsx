@@ -5,7 +5,7 @@ import Logo from '../assets/CheveningLogo.png';
 const About = () => {
   return (
     <>
-      <div className="w-full h-full px-10 sm:px-20 lg:px-36 py-8 bg-white flex flex-col space-y-8 items-start gap-4">
+      <div className="w-full h-full px-10 sm:px-20 lg:px-36 py-8 bg-[#fafaf9] flex flex-col space-y-8 items-start gap-4">
       {/* About Us Section */}
       
       <div className="flex flex-col space-y-4 ">

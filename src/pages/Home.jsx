@@ -5,7 +5,7 @@ import ObjectivesSection from '../components/Objectives';
 import OurServices from '../components/ServicesSection';
 import OurPartners from '../components/Partners';
 
-function Home() {
+const Home = () => {
   return (
     <>
         

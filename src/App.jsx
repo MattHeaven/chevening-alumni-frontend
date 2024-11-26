@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -10,14 +10,27 @@ import Services from './pages/Services';
 import EventsFeed from './pages/EventsFeed';
 import NotFound from './pages/NotFound';
 import Partner from './pages/Partner';
+import ScrollToTop from './components/ScrollToTop';
+import { AnimatePresence, motion } from 'framer-motion';
+import LoginPage from './pages/Login';
+import SignUp from './pages/SignUp';
+import ForgotPassword from './pages/ForgotPassword';
 
 function App() {
   console.log("App loaded!");
+  const location = useLocation();
+
   return (
+    <AnimatePresence mode="wait">
+
+    
     
       <div className="App">
+      {location.pathname !== '/login' && <Navbar />} {/* Hide Navbar on login page */}
+        <ScrollToTop />
         {/* Navbar */}
         <Navbar />
+
 
         {/* Routes */}
         <Routes>
@@ -28,6 +41,9 @@ function App() {
           <Route path="/events" element={<EventsFeed />} />
           <Route path="/services" element={<Services />} />
           <Route path="/partner" element={<Partner />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           {/* Add more routes as needed */}
 
           {/* Not Found */}
@@ -36,8 +52,10 @@ function App() {
 
         {/* Footer */}
         <Footer />
+        {location.pathname !== '/login' && <Footer />} {/* Hide Footer on login page */}
       </div>
     
+    </AnimatePresence>
   );
 }
 

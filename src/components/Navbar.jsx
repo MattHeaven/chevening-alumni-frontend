@@ -69,9 +69,7 @@ const Navbar = () => {
           <Link to="/events" className="text-gray-600 hover:text-gray-900">
             Events
           </Link>
-          <button className="bg-neutral-950 text-white px-6 py-2 rounded">
-            Log In
-          </button>
+          <Link to="/login" className="bg-neutral-950 text-white px-6 py-2 rounded"> Login </Link>
         </div>
       </div>
     </nav>
